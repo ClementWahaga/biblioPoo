@@ -16,7 +16,7 @@ class member  {
         
     }
 
-
+    // stter------------------------------------------------------------>
     public function setId($id) {
         if (!is_int($id)) { // S'il ne s'agit pas d'un nombre entier.
             trigger_error('id du personnage doit être un nombre entier', E_USER_WARNING);
@@ -62,6 +62,39 @@ class member  {
 
         $this->_nblivreEmprunte = $nblivreEmprunte;
     }
+
+    //getter----------------------------------------------------------------->
+    public function id()
+    {
+        return $this -> _id ;
+    }
+
+    public function lastName()
+    {
+        return $this -> _lastName ;
+    }
+
+    public function firstName()
+    {
+        return $this -> _firstName ;
+    }
+
+    public function nblivreEmprunte()
+    {
+        return $this -> _nblivreEmprunte ;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
