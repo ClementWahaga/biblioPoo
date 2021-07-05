@@ -55,7 +55,7 @@ class member  {
             return;
         }
 
-        if ($nblivreEmprunte > 100) { // On vérifie bien qu'on ne souhaite pas assigner une valeur supérieure à 100.
+        if ($nblivreEmprunte > 5) { // On vérifie bien qu'on ne souhaite pas assigner une valeur supérieure à 5.
             trigger_error('les livre emrpreinté doivent  ne peut dépasser 100', E_USER_WARNING);
             return;
         }
