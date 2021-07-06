@@ -6,7 +6,7 @@ class member  {
     private $_firstName;
     private $_NblivreEmprunte;
    
-
+    
 
     public function __construct($name,$fname,$nblivreEmprunte )
     {
@@ -16,7 +16,7 @@ class member  {
         
     }
 
-    // stter------------------------------------------------------------>
+    // setter------------------------------------------------------------>
     public function setId($id) {
         if (!is_int($id)) { // S'il ne s'agit pas d'un nombre entier.
             trigger_error('id du personnage doit être un nombre entier', E_USER_WARNING);
@@ -60,7 +60,7 @@ class member  {
             return;
         }
 
-        $this->_nblivreEmprunte = $nblivreEmprunte;
+        $this->_NblivreEmprunte = $nblivreEmprunte;
     }
 
     //getter----------------------------------------------------------------->
@@ -81,7 +81,7 @@ class member  {
 
     public function nblivreEmprunte()
     {
-        return $this -> _nblivreEmprunte ;
+        return $this -> _NblivreEmprunte ;
     }
 
 
