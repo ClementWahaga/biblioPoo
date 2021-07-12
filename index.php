@@ -13,19 +13,19 @@ $p = $_GET['p'];
 ob_start();
 
 if ($p === 'home'){
-require '../view/home.php';
+require './view/home.php';
 
 }elseif($p === 'rayon'){
-    require '../view/rayon.php';
+    require './view/rayon.php';
 
 }elseif($p === 'empreint'){
-    require '../view/empreint.php';
+    require './view/empreint.php';
 
 }elseif($p === 'cataloque'){
-    require '../view/catalogue.php';
+    require './view/catalogue.php';
 
 }elseif($p === 'abonnes'){
-    require '../view/abonnes.php';
+    require './view/abonnes.php';
 }
 
 
@@ -37,4 +37,4 @@ require '../view/home.php';
 
 
 $content = ob_get_clean();
-require '../view/template/template.php';
+require './view/template/template.php';

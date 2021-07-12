@@ -29,8 +29,8 @@ class rayonManager {
                                              SET nom       = ?,
                                                  reference = ?');
         
-        $req->bindValue(':nom',        $rayon->Nom(),           PDO::PARAM_STR);
-        $req->bindValue(':reference', $rayon->reference(),    PDO::PARAM_INT);
+        $req->bindValue('?', $rayon->Nom(),           PDO::PARAM_STR);
+        $req->bindValue('?', $rayon->reference(),     PDO::PARAM_INT);
         
         $req->execute();
         
@@ -47,7 +47,7 @@ class rayonManager {
         $id = (int) $id;
         
         $req = $this->_dbh->query('SELECT id, nom, reference
-                                    FROM rayon
+                                   FROM rayon
                                    WHERE id = '. $id);
         $data = $req->fetch(PDO::FETCH_ASSOC);
         //var_dump($datas);
@@ -81,8 +81,8 @@ class rayonManager {
                                       WHERE id         = :id
                                     ');
         
-        $req->bindValue(':nom',            $rayon->nom(),               PDO::PARAM_INT);
-        $req->bindValue(':reference',      $rayon->reference(),        PDO::PARAM_INT);
+        $req->bindValue('?',            $rayon->nom(),               PDO::PARAM_INT);
+        $req->bindValue('?',      $rayon->reference(),        PDO::PARAM_INT);
         $req->execute();
         $req->closeCursor();
     }
