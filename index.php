@@ -1,15 +1,15 @@
 <?php
-require 'app/autoloader.php'; 
+require './app/autoloader.php'; 
+require './helper/db.php';
 Autoloader::register(); 
 
 if (isset($_GET['p'])){
 $p = $_GET['p'];
-
 }else{
     $p ='home';
 }
 
-$db = new app\helper\database('biliotheque');
+
 ob_start();
 
 if ($p === 'home'){

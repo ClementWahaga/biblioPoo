@@ -1,15 +1,32 @@
 <?php
 
 
-class database {
+function pdo_connect_mysql() {
+  $user='root';
+  $pass="";
+    
+  try {
+    $dbh = new PDO('mysql:host=localhost;dbname=bibliotheque', $user, $pass);
+    echo "connexion établie" . "<br/>";
+    return $dbh;
+        
+               
+  }catch (PDOException $e) {
+    print "Erreur, vous avez etait deconnecté !: " . $e->getMessage() . "<br/>";
+    return false;
+    }
+}
+
+/*class database {
   private $db_name;
   private $db_user;
   private $db_pass;
   private $db_host;
-  private $pdo
-  public function __construct(db_name,$db_user='root',$db_pass = '',$db_host = 'localhost'){
+  private $pdo;
+  
+  public function __construct($db_name='bibliotheque', $db_user='root', $db_pass = '', $db_host = 'localhost'){
 
-    $this->db_name =$db_name;
+    $this->db_name = $db_name;
     $this->db_user = $db_user;
     $this->db_pass = $db_pass;
     $this->db_host = $db_host;
@@ -34,4 +51,4 @@ class database {
 
   )
 
-}
+}*/
