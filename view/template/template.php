@@ -1,7 +1,4 @@
-
-
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
       <head>
         <meta charset="utf-8">
@@ -18,10 +15,10 @@
           <div>
             
             <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php">Home</a></button>
-            <button type="button" class="btn btn-outline-primary btn-sm"><a href="rayon.php">Rayon</a></button>
-            <button type="button" class="btn btn-outline-primary btn-sm"><a href="catalogue.php">Catalogue</a></button>
-            <button type="button" class="btn btn-outline-primary btn-sm"><a href="empreint.php">Empreint</a></button>
-            <button type="button" class="btn btn-outline-primary btn-sm"><a href="adherent.php">Adherents</a></button>
+            <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php?p=rayon">Rayon</a></button>
+            <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php?p=catalogue">Catalogue</a></button>
+            <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php?p=empreint">Empreint</a></button>
+            <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php?p=adherent">Adherents</a></button>
             <a href="inscription.php" class="create-contact">Créer un membre</a>
             
           </div>
