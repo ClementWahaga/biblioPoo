@@ -9,7 +9,7 @@ $p = $_GET['p'];
     $p ='home';
 }
 
-$db = new database('biliotheque')
+$db = new app\helper\database('biliotheque');
 ob_start();
 
 if ($p === 'home'){
