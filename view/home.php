@@ -1,11 +1,6 @@
 <?php
-require '../helper/template.php';
-
-
-
-
-<?php echo template_header('Read'); ?>
-
+require '../template/template.php';
+?>
 
 
 
@@ -13,9 +8,12 @@ require '../helper/template.php';
 
 
 
+<h1>je suis la home page</h1>
 
 
 
 
 
-<?php echo template_header('Read'); ?>
+
+
+
