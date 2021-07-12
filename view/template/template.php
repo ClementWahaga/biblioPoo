@@ -18,7 +18,7 @@
             <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php?p=rayon">Rayon</a></button>
             <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php?p=catalogue">Catalogue</a></button>
             <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php?p=empreint">Empreint</a></button>
-            <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php?p=adherent">Adherents</a></button>
+            <button type="button" class="btn btn-outline-primary btn-sm"><a href="index.php?p=member">Adherents</a></button>
             <a href="inscription.php" class="create-contact">Créer un membre</a>
             
           </div>

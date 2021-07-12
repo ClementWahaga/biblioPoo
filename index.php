@@ -24,8 +24,8 @@ require './view/home.php';
 }elseif($p === 'cataloque'){
     require './view/catalogue.php';
 
-}elseif($p === 'abonnes'){
-    require './view/abonnes.php';
+}elseif($p === 'member'){
+    require './view/member.php';
 }
 
 
