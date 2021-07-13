@@ -1,5 +1,5 @@
 <?php
-class member  {
+class book  {
 
     private $_id;
     private $_titre ;

@@ -31,7 +31,8 @@ class database {
   public function q ($statement) {
     $req = $this -> getPdo()->query($statement);
     $result = $req -> fetchAll(PDO::FETCH_OBJ);
-    return $result ;}
+    return $result ;
+  }
    
 
   
