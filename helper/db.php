@@ -1,23 +1,6 @@
 <?php
 
-
-function pdo_connect_mysql() {
-  $user='root';
-  $pass="";
-    
-  try {
-    $dbh = new PDO('mysql:host=localhost;dbname=bibliotheque', $user, $pass);
-    echo "connexion établie" . "<br/>";
-    return $dbh;
-        
-               
-  }catch (PDOException $e) {
-    print "Erreur, vous avez etait deconnecté !: " . $e->getMessage() . "<br/>";
-    return false;
-    }
-}
-
-/*class database {
+class database {
   private $db_name;
   private $db_user;
   private $db_pass;
@@ -39,16 +22,18 @@ function pdo_connect_mysql() {
       $pass="";
       $pdo = new PDO('mysql:host=localhost;dbname=bibliotheque', $user, $pass);
       $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-      $this->pdo =$pdo
+      $this->pdo =$pdo;
     }
-    return $this->pdo
+    return $this->pdo;
 
   }
-  public function q{$statement}(
+
+  public function q ($statement) {
     $req = $this -> getPdo()->query($statement);
-    $result = req -> fetchAll(PDO::FETCH_OBJ)
-    return $result 
+    $result = $req -> fetchAll(PDO::FETCH_OBJ);
+    return $result ;}
+   
 
-  )
+  
 
-}*/
+}
